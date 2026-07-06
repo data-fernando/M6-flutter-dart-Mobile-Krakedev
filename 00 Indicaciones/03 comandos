@@ -1,0 +1,7 @@
+## Comandos flutter
+
+instalar dependencias de un proyecto
+```
+flutter pub get
+C:\Tools\flutter\bin\flutter.bat pub get
+```
