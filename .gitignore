@@ -58,6 +58,9 @@ coverage/
 node_modules/
 vendor/
 packages/
+*.lock
+.dart_tool/package_config.json
+.dart_tool/version
 
 # Archivos de configuración local
 *.env
