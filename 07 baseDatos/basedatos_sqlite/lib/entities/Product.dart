@@ -3,12 +3,14 @@ class Product {
   final String name;
   final double price;
   final String description;
+  final String? correo;
 
   Product({
     this.id,
     required this.name,
     required this.price,
     required this.description,
+    required this.correo,
   });
 
   Product copyWith({
@@ -16,12 +18,14 @@ class Product {
     String? name,
     double? price,
     String? description,
+    String? correo,
   }) {
     return Product(
       id: id ?? this.id,
       name: name ?? this.name,
       price: price ?? this.price,
       description: description ?? this.description,
+      correo: correo ?? this.correo,
     );
   }
 
@@ -31,6 +35,7 @@ class Product {
       'name': name,
       'price': price,
       'description': description,
+      'correo': correo,
     };
   }
 
@@ -41,6 +46,7 @@ class Product {
       name: map['name'],
       price: map['price'],
       description: map['description'],
+      correo: map['correo'],
     );
   }
 
